@@ -44,3 +44,26 @@
   ``` 
   cargo test --bin concurrency -- --nocapture
   ```
+
+### RESTful Catalog Service
+
+Run the service with:
+
+```bash
+cargo run --bin restful_service
+```
+
+The service listens on `http://127.0.0.1:3000` and creates `catalog.db` in the
+current directory with sample products on its first run.
+
+- `GET /api/catalog` returns the catalog as JSON.
+- `POST /api/catalog` adds a product. Send JSON with `name`, `description`, and
+  `price_cents` fields:
+
+  ```bash
+  curl -X POST http://127.0.0.1:3000/api/catalog \
+    -H 'Content-Type: application/json' \
+    -d '{"name":"Notebook","description":"Ruled paper notebook","price_cents":599}'
+  ```
+
+Run the service tests with `cargo test --bin restful_service`.
