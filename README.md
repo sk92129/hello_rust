@@ -31,3 +31,16 @@
 
 3. **[Rust by Example](https://doc.rust-lang.org/rust-by-example/)**  
    Practical, bite-sized examples covering Rust and its standard library. View it offline with `rustup doc --rbe`.
+
+
+### Tests
+
+ 1. Concurrency test
+  ```
+    cargo test --bin concurrency
+  ```
+
+   to display the thread id and the vector of integers
+  ``` 
+  cargo test --bin concurrency -- --nocapture
+  ```
