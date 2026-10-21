@@ -2,12 +2,12 @@
 
 I was trying to figure that out myself.  I have years of experience with Java backend, .NET COM backend, JavaScript nodeJS backend experience.  So why would anyone want to venture into RUST?
 
-| Area | Rust | Java |
-| --- | --- | --- |
-| **Object orientation** | Uses structs and enums to model data, and traits to define shared behavior. It has methods and encapsulation, but no classes or inheritance; composition and traits are the common alternatives. | Class-based object-oriented programming with classes, interfaces, inheritance, and encapsulation. |
-| **Type checking** | Statically and strongly typed, with extensive checks at compile time. Ownership and borrowing rules help prevent data races and memory errors without a garbage collector. | Statically and strongly typed. The JVM garbage collector manages memory, while some errors can still arise at runtime, such as null dereferences or failed casts. |
-| **Developer tools** | Cargo provides an integrated workflow for builds, dependencies, tests, and publishing. `rustfmt` and Clippy support consistent formatting and linting. | A mature ecosystem with Maven and Gradle for builds and dependencies, plus broad IDE support and JVM profiling and debugging tools. |
-| **Developer community** | A growing global community, with official learning resources and a strong presence in systems programming, embedded software, and performance-sensitive services. | A large, long-established global community, with extensive documentation, libraries, frameworks, and enterprise experience. |
+| Area | Rust | Java | JavaScript (Node.js) |
+| --- | --- | --- | --- |
+| **Object orientation** | Uses structs and enums to model data, and traits to define shared behavior. It has methods and encapsulation, but no classes or inheritance; composition and traits are the common alternatives. | Class-based object-oriented programming with classes, interfaces, inheritance, and encapsulation. | Prototype-based object orientation with ES6 `class` syntax syntactic sugar; relies heavily on object composition, closures, and first-class functions. |
+| **Type checking** | Statically and strongly typed, with extensive checks at compile time. Ownership and borrowing rules help prevent data races and memory errors without a garbage collector. | Statically and strongly typed. The JVM garbage collector manages memory, while some errors can still arise at runtime, such as null dereferences or failed casts. | Dynamically and weakly typed at runtime with V8 garbage collection; requires TypeScript or JSDoc for static compile-time checking. |
+| **Developer tools** | Cargo provides an integrated workflow for builds, dependencies, tests, and publishing. `rustfmt` and Clippy support consistent formatting and linting. | A mature ecosystem with Maven and Gradle for builds and dependencies, plus broad IDE support and JVM profiling and debugging tools. | Package managers (`npm`, `yarn`, `pnpm`) and script runners; formatting and linting via ESLint and Prettier; native debugging through Chrome DevTools and VS Code. |
+| **Developer community** | A growing global community, with official learning resources and a strong presence in systems programming, embedded software, and performance-sensitive services. | A large, long-established global community, with extensive documentation, libraries, frameworks, and enterprise experience. | Massive, ubiquitous full-stack community backed by the npm ecosystem (the world's largest package registry) and widespread adoption across web APIs and microservices. |
 
 ### Essential Commands & Best Practices
 
